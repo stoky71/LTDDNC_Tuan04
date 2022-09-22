@@ -37,8 +37,11 @@ export default function App() {
           <Text style={{paddingLeft:10, color: 'blue', fontWeight: "800"}}>Xem tại đây</Text>
         </View>
         <View style={{flexDirection: "row", marginTop:20, justifyContent: "space-between", alignItems: 'center'}}>
-          <TextInput placeholder='Mã giảm giá' placeholderTextColor='#011627' 
-          style={{width:99, height:45,fontWeight: "800", width: "70%", borderWidth:1, textAlign:"center", fontSize: 20}}></TextInput>
+          <TextInput 
+          style={{paddingLeft:20,width:99, height:45,fontWeight: "800", width: "70%", borderWidth:1, fontSize: 20}}>
+            <Image source={require('./images/yellow_block.png')} style={{justifyContent:'flex-start'}}></Image>
+            <Text style={{}}>  Mã giảm giá</Text>
+          </TextInput>
           <TouchableOpacity style={{backgroundColor: '#0A5EB7', width:99, height:45, padding:13}}>
             <Text style={{paddingLeft:7, color:'white', fontWeight:'800', fontSize: 14}}>ÁP DỤNG</Text>
           </TouchableOpacity>
